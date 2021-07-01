@@ -17,24 +17,24 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
    
     @IBOutlet weak var TableView: UITableView!
     @IBOutlet weak var lblMenuPage: UILabel!
-    @IBAction func btnBackViewController(_ sender: Any) {
-    self.performSegue(withIdentifier: "viewControllerSegue", sender: self)
-    }
-  
+
     @IBAction func btnAddToCart(_ sender: Any) {
-        
+       arrSelectedData.add(tableList[(sender as AnyObject).tag])
+    }
+    @IBAction func btnAddNewItemToList(_ sender: Any) {
+        self.performSegue(withIdentifier: "viewControllerSegue", sender: self)
     }
     @IBAction func btnOrderNow(_ sender: UIButton) {
         
         var desc = self.storyboard?.instantiateViewController(withIdentifier: "FinalBillViewController") as! FinalBillViewController
         desc.arrSelectedData = arrSelectedData
-        self.navigationController?.pushViewController(desc, animated: true)    }
-    
-   @objc func btnAddCart(sender: UIButton) {
+        self.navigationController?.pushViewController(desc, animated: true)
         
-        arrSelectedData.add(tableList[sender.tag])
+    }
+    @objc func btnAddCart(sender: UIButton) {
         
-       
+        
+        
         //performSegue(withIdentifier: "descriptionSegue", sender: self)
     }
     
@@ -61,11 +61,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableList.count
     }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         let file: file
@@ -75,11 +74,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let NSDocumentDirectory = FileManager.SearchPathDirectory.documentDirectory
         let NSUserDomainMask = FileManager.SearchPathDomainMask.userDomainMask
         let paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true)
-        
         cell.btnAddCart.tag = indexPath.row
         cell.btnAddCart.addTarget(self, action: #selector(TableViewController.btnAddCart(sender:)), for: UIControlEvents.touchUpInside)
-       
-        
         if let dirPath = paths.first
         {
             let imageURL = URL(fileURLWithPath: dirPath).appendingPathComponent(file.filename!)
@@ -93,9 +89,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
         var fileData = tableList[myIndex] as file
-        
         var desc = self.storyboard?.instantiateViewController(withIdentifier: "descriptionctrl") as! DescriptionViewController
-        
         desc.recordId = fileData.id!
         self.navigationController?.pushViewController(desc, animated: true)
         //performSegue(withIdentifier: "descriptionSegue", sender: self)

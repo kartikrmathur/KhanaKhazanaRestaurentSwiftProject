@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
     @IBAction func btnLogin(_ sender: Any)
     {
         self.performSegue(withIdentifier: "AccountViewSegue", sender: self)
+        
     }
     @IBOutlet weak var lblLoginWithCurrentAccount: UILabel!
     @IBOutlet weak var lblEmailorUsername: UILabel!

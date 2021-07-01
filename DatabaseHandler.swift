@@ -19,7 +19,6 @@ class DatabaseHandler: NSObject {
         
         var db: OpaquePointer? = nil
         var arrUserData: NSMutableArray!
-        
         let fileManager = FileManager.default
         let documentsUrl = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
         

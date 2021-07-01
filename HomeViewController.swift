@@ -13,7 +13,7 @@ import SQLite3
 class HomeViewController: UIViewController {
 
      //MARK: PROPERTIES
-    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var lblID: UILabel!
     @IBOutlet weak var lblPassword: UILabel!
     @IBOutlet weak var lblConfirmPassword: UILabel!
@@ -22,6 +22,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtConfirmPassword: UITextField!
     @IBOutlet weak var btnSignUp: UIButton!
+    @IBAction func btnSignUp(_ sender: Any) {
+        print ("SignUp button pressed")
+        self.performSegue(withIdentifier: "signupSegue", sender: self)
+    }
     @IBAction func btnLogin(_ sender: Any)
         {
         print ("login button pressed")

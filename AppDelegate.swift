@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  khanakhazana
+//  new
 //
-//  Created by Mathur on 25/05/18.
+//  Created by Mathur on 03/07/18.
 //  Copyright © 2018 Apple inc. All rights reserved.
 //
 
@@ -12,12 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var db: OpaquePointer? = nil
+     var databaseHandler = DatabaseHandler()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
         // Override point for customization after application launch.
+        databaseHandler.copyDatabaseIfNeeded()
         return true
     }
+    
+    
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
