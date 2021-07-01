@@ -12,7 +12,7 @@ class AboutUsViewController: UIViewController {
  @IBOutlet weak var myVebView: UIWebView!
 override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://www.google.com")
+        let url = URL(string: "https://www.khanakhazana.com")
         myVebView.loadRequest(URLRequest(url:url!))
         // Do any additional setup after loading the view.
     }
