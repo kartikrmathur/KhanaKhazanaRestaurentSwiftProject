@@ -13,7 +13,7 @@ import SQLite3
 class HomeViewController: UIViewController {
 
      //MARK: PROPERTIES
-    @IBOutlet weak var lblUserName: UILabel!
+    @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblID: UILabel!
     @IBOutlet weak var lblPassword: UILabel!
     @IBOutlet weak var lblConfirmPassword: UILabel!
