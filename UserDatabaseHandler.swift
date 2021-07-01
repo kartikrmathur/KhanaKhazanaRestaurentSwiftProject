@@ -63,7 +63,7 @@ class UserDatabaseHandler: NSObject {
         var db: OpaquePointer? = nil
         
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-            .appendingPathComponent("database.sqlite")
+            .appendingPathComponent("userdatabase.sqlite")
         
         // open database
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
@@ -81,7 +81,7 @@ class UserDatabaseHandler: NSObject {
         var arrUserNameDic: NSMutableDictionary!
         
         //select data from user table
-        if sqlite3_prepare_v2(dbPointer, "select username, password, userimage from user", -1, &statement, nil) != SQLITE_OK {
+        if sqlite3_prepare_v2(dbPointer, "select username, password, name,fathersname,mothersname,phoneNo,emailId,address,photo from user", -1, &statement, nil) != SQLITE_OK {
             let errmsg = String(cString: sqlite3_errmsg(dbPointer)!)
             print("error preparing select: \(errmsg)")
         }
@@ -96,7 +96,13 @@ class UserDatabaseHandler: NSObject {
             //arrUse//rDic.setValue(id, forKey: "id")
             var username: String = ""
             var password: String = ""
-            var userimage: String = ""
+            var name: String = ""
+            var fathersname: String = ""
+            var mothersname: String = ""
+            var phoneNo: String = ""
+            var emailId: String = ""
+            var adress: String = ""
+            var photo: String = ""
             
             //username
             if let cString = sqlite3_column_text(statement, 1) {
@@ -112,14 +118,59 @@ class UserDatabaseHandler: NSObject {
             } else {
                 //print("password not found")
             }
-            //userimage
+            //name
             if let cString = sqlite3_column_text(statement, 3) {
-                userimage = String(cString: cString)
-                //arrUserDic.setValue(filename, forKey: "filename")
+                name = String(cString: cString)
+                //arrUserDic.setValue(name, forKey: "name")
             } else {
-                //print("pic not found")
+                //print("name not found")
             }
-            fileObj = user(Username: username, Password: password, Userimage: userimage, id: id)
+            //fathersname
+            if let cString = sqlite3_column_text(statement, 4) {
+                fathersname = String(cString: cString)
+                //arrUserDic.setValue(fathersname, forKey: "fathersname")
+            } else {
+                //print("fathersname not found")
+            }
+            //mothersname
+            if let cString = sqlite3_column_text(statement, 5) {
+                mothersname = String(cString: cString)
+                //arrUserDic.setValue(mothersname, forKey: "mothersname")
+            } else {
+                //print("mothersname not found")
+            }
+            //phoneNO
+            if let cString = sqlite3_column_text(statement, 6) {
+                phoneNo = String(cString: cString)
+                //arrUserDic.setValue(phoneNo, forKey: "phoneNo")
+            } else {
+                //print("phoneNo not found")
+            }
+            
+            //emailId
+            if let cString = sqlite3_column_text(statement, 7) {
+                emailId = String(cString: cString)
+                //arrUserDic.setValue(emailId, forKey: "emailId")
+            } else {
+                //print("emailId not found")
+            }
+            //address
+            if let cString = sqlite3_column_text(statement, 6) {
+                phoneNo = String(cString: cString)
+                //arrUserDic.setValue(phoneNo, forKey: "phoneNo")
+            } else {
+                //print("phoneNo not found")
+            }
+            //photo
+            if let cString = sqlite3_column_text(statement, 6) {
+                photo = String(cString: cString)
+                //arrUserDic.setValue(photo, forKey: "photo")
+            } else {
+                //print("photo not found")
+            }
+            
+            
+            fileObj = user(Id: id, Username: username, Password: password, Name: name, FathersName: fathersname, MothersName: mothersname, PhoneNo: phoneNo, EmailId: emailId, Address: adress, Photo: photo)
             arrUserNameData.add(fileObj)
         }
         
@@ -137,7 +188,7 @@ class UserDatabaseHandler: NSObject {
         //first empty the list of News
         tableList.removeAll()
         //this is our select query
-        let queryString = String.init(format: "SELECT username,password,userimage,id from user where id = %d", searchId)
+        let queryString = String.init(format: "SELECT username, password, name,fathersname,mothersname,phoneNo,emailId,address,photo from user where id = %d", searchId)
         //preparing the pointer
         var stmt:OpaquePointer?
         
@@ -151,12 +202,18 @@ class UserDatabaseHandler: NSObject {
         
         //traversing through all records
         while (sqlite3_step(stmt) == SQLITE_ROW){
-            let username = String(cString: sqlite3_column_text(stmt, 0))
-            let password = String(cString: sqlite3_column_text(stmt, 1))
-            let userimage = String(cString: sqlite3_column_text(stmt, 2))
-            let id: NSInteger = NSInteger(sqlite3_column_int(stmt, 3))
+           let id: NSInteger = NSInteger(sqlite3_column_int(stmt, 0))
+            let username = String(cString: sqlite3_column_text(stmt, 1))
+            let password = String(cString: sqlite3_column_text(stmt, 2))
+            let Name = String(cString: sqlite3_column_text(stmt, 3))
+            let FathersName = String(cString: sqlite3_column_text(stmt, 4))
+            let MothersName = String(cString: sqlite3_column_text(stmt, 5))
+            let PhoneNo = String(cString: sqlite3_column_text(stmt, 6))
+            let EmailId = String(cString: sqlite3_column_text(stmt, 7))
+            let Address = String(cString: sqlite3_column_text(stmt, 8))
+             let Photo = String(cString: sqlite3_column_text(stmt, 9))
             // adding values to list
-            tableList.append(user(Username:username, Password:password, Userimage: userimage,id:id))
+            tableList.append(user(Id:id, Username:username, Password:password,Name: Name, FathersName: FathersName, MothersName: MothersName,PhoneNo: PhoneNo, EmailId: EmailId, Address: Address, Photo: Photo))
         }
         
         return tableList
