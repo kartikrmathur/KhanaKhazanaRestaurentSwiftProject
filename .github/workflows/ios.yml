@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: |
           xcodebuild -project KhanaKhazana.xcodeproj \
-            -scheme KhanaKhazana \
+            -target KhanaKhazana \
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
             -configuration Debug \
             CODE_SIGN_IDENTITY="-" \
