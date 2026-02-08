@@ -55,12 +55,10 @@ class UserTableViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.lblUserName.text = user.username
         cell.lblPassword.text = user.password
         
-        let NSDocumentDirectory = FileManager.SearchPathDirectory.documentDirectory
-        let NSUserDomainMask = FileManager.SearchPathDomainMask.userDomainMask
-        let paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true)
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         if let dirPath = paths.first
         {
-            let imageURL = URL(fileURLWithPath: dirPath).appendingPathComponent(user.photo!)
+            let imageURL = dirPath.appendingPathComponent(user.photo!)
             let image = UIImage(contentsOfFile: imageURL.path)
             cell.imgView.image = image
         }

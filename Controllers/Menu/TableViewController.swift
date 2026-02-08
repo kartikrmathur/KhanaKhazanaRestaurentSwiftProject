@@ -71,14 +71,12 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         file = tableList[indexPath.row]
         cell.lblDishName.text = file.dishname
         cell.lblCost.text = file.cost
-        let NSDocumentDirectory = FileManager.SearchPathDirectory.documentDirectory
-        let NSUserDomainMask = FileManager.SearchPathDomainMask.userDomainMask
-        let paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true)
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         cell.btnAddCart.tag = indexPath.row
         cell.btnAddCart.addTarget(self, action: #selector(TableViewController.btnAddCart(sender:)), for: UIControl.Event.touchUpInside)
         if let dirPath = paths.first
         {
-            let imageURL = URL(fileURLWithPath: dirPath).appendingPathComponent(file.filename!)
+            let imageURL = dirPath.appendingPathComponent(file.filename!)
             let image = UIImage(contentsOfFile: imageURL.path)
             cell.imgView.image = image
         }

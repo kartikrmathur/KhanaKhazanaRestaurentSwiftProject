@@ -27,12 +27,10 @@ class DescriptionViewController: UIViewController {
         lblDishName.text = file.dishname
         lblCost.text = file.cost
         
-        let NSDocumentDirectory = FileManager.SearchPathDirectory.documentDirectory
-        let NSUserDomainMask = FileManager.SearchPathDomainMask.userDomainMask
-        let paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true)
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         if let dirPath = paths.first
         {
-            let imageURL = URL(fileURLWithPath: dirPath).appendingPathComponent(file.filename!)
+            let imageURL = dirPath.appendingPathComponent(file.filename!)
             let image = UIImage(contentsOfFile: imageURL.path)
             imgView.image = image
         }
@@ -42,7 +40,8 @@ class DescriptionViewController: UIViewController {
     }
     func getImage(imageName: String){
         let fileManager = FileManager.default
-        let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(".jpg")
+        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let imagePath = documentDirectory.appendingPathComponent(".jpg").path
         if fileManager.fileExists(atPath: imagePath){
             imgView.image = UIImage(contentsOfFile: imagePath)
         }else{

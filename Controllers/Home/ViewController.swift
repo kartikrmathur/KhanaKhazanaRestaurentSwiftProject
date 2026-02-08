@@ -51,7 +51,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         database.insert(dishname: dishname!, cost: cost!, filename: filename)
         self.performSegue(withIdentifier: "tableViewSegue", sender: self)
     }
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         imgView.contentMode = .scaleAspectFit
         imgView.image = chosenImage
@@ -60,7 +60,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         //dismiss(animated:true, completion: nil)
     }
     
-        func imagePicker(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        func imagePicker(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
             imgView.contentMode = .scaleAspectFit
             imgView.image = chosenImage
@@ -74,7 +74,8 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
             filename = "\(NSDate().timeIntervalSince1970 * 1000).jpeg"
             
             let fileManager = FileManager.default
-            let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(filename)
+            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            let paths = documentDirectory.appendingPathComponent(filename).path
             
             print("Timestamp: \(Timestamp)")
             print(paths)
@@ -85,9 +86,8 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         
         //Get Document Directory Path
         func getDirectoryPath() -> String {
-            let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
-            let documentsDirectory = paths[0]
-            return documentsDirectory
+            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            return documentDirectory.path
         }
         
         //Get Image from Document Directory
@@ -104,7 +104,8 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         //Create Directory
         func createDirectory(){
             let fileManager = FileManager.default
-            let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("customDirectory")
+            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            let paths = documentDirectory.appendingPathComponent("customDirectory").path
             if !fileManager.fileExists(atPath: paths){
                 try! fileManager.createDirectory(atPath: paths, withIntermediateDirectories: true, attributes: nil)
             }else{
@@ -114,7 +115,8 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         //Delete Directory
         func deleteDirectory(){
             let fileManager = FileManager.default
-            let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("customDirectory")
+            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            let paths = documentDirectory.appendingPathComponent("customDirectory").path
             if fileManager.fileExists(atPath: paths){
                 try! fileManager.removeItem(atPath: paths)
             }else{
