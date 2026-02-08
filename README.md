@@ -171,14 +171,14 @@ KhanaKhazanaRestaurantSwiftProject/
 └── docs/           # Architecture, setup, screenshots, etc.
 ```
 
-For a detailed breakdown and architecture, see [docs/architecture.md](docs/architecture.md) (when added) and [docs/setup.md](docs/setup.md) (when added). After file reorganization, see [docs/XCODE_UPDATE_GUIDE.md](docs/XCODE_UPDATE_GUIDE.md).
+For a detailed breakdown and architecture, see [docs/architecture.md](docs/architecture.md) and [docs/setup.md](docs/setup.md). After file reorganization, see [docs/XCODE_UPDATE_GUIDE.md](docs/XCODE_UPDATE_GUIDE.md).
 
 ---
 
 ## 📚 Documentation
 
-- **[Setup & troubleshooting](docs/setup.md)** — Prerequisites, CocoaPods, signing, common errors.
-- **[Architecture](docs/architecture.md)** — Structure, data flow, and main components.
+- **[Setup & troubleshooting](docs/setup.md)** — Prerequisites, installation, CocoaPods, signing, troubleshooting.
+- **[Architecture](docs/architecture.md)** — MVC, data flow, database schema, navigation.
 - **[Screenshots guide](docs/SCREENSHOTS_GUIDE.md)** — How to capture and add screenshots to this README.
 - **[Repository rename](docs/REPOSITORY_RENAME.md)** — If you renamed the repo from `KhanaKhazanaRestaurentSwiftProject`, update your remote URL and clones.
 - **[Xcode update (Day 2)](docs/XCODE_UPDATE_GUIDE.md)** — After file reorganization: verify build and optional navigator groups.
