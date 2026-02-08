@@ -8,7 +8,11 @@
 
 import UIKit
 
-class finalBillViewController: UIViewController {
+/// Storyboard identifier: FinalBillViewController. Receives cart from TableViewController.
+class FinalBillViewController: UIViewController {
+
+    /// Cart items passed from TableViewController when user taps "Order Now".
+    var arrSelectedData: NSMutableArray = NSMutableArray()
 
     override func viewDidLoad() {
         super.viewDidLoad()

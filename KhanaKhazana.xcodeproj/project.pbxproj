@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001 /* AppDelegate.swift */; };
+		A1000002 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* AboutUsViewController.swift */; };
+		A1000003 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003 /* AccountViewController.swift */; };
+		A1000004 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004 /* CustomCollectionViewCell.swift */; };
+		A1000005 /* databaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005 /* databaseViewController.swift */; };
+		A1000006 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006 /* DatabaseHandler.swift */; };
+		A1000007 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000007 /* DescriptionViewController.swift */; };
+		A1000008 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000008 /* DetailViewController.swift */; };
+		A1000009 /* file.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000009 /* file.swift */; };
+		A100000A /* finalBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000A /* finalBillViewController.swift */; };
+		A100000B /* FruitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000B /* FruitsTableViewController.swift */; };
+		A100000C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000C /* HomeViewController.swift */; };
+		A100000D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000D /* LoginViewController.swift */; };
+		A100000E /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000E /* MyCollectionViewCell.swift */; };
+		A100000F /* optionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000F /* optionViewController.swift */; };
+		A1000010 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000010 /* ScrollViewController.swift */; };
+		A1000011 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000011 /* TableView.swift */; };
+		A1000012 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000012 /* TableViewCell.swift */; };
+		A1000013 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000013 /* TableViewController.swift */; };
+		A1000014 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000014 /* user.swift */; };
+		A1000015 /* UserDatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000015 /* UserDatabaseHandler.swift */; };
+		A1000016 /* userDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000016 /* userDatabaseViewController.swift */; };
+		A1000017 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000017 /* UserTableViewCell.swift */; };
+		A1000018 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000018 /* UserTableViewController.swift */; };
+		A1000019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000019 /* ViewController.swift */; };
+		A100001A /* NSMutableArray+test.m in Sources */ = {isa = PBXBuildFile; fileRef = A200001B /* NSMutableArray+test.m */; };
+		A100001B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A200001C /* Main.storyboard */; };
+		A100001C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A200001D /* LaunchScreen.storyboard */; };
+		A100001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A200001E /* Assets.xcassets */; };
+		A100001E /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A200001F /* database.sqlite */; };
+		A100001F /* foodie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2000020 /* foodie.jpg */; };
+		A1000020 /* khanakhazanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000021 /* khanakhazanaTests.swift */; };
+		A1000021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000025 /* Foundation.framework */; };
+		A1000022 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000026 /* UIKit.framework */; };
+		A1000023 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000027 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3000001 /* KhanaKhazana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KhanaKhazana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3000002 /* KhanaKhazanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhanaKhazanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2000002 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		A2000003 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		A2000004 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2000005 /* databaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = databaseViewController.swift; sourceTree = "<group>"; };
+		A2000006 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		A2000007 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		A2000008 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A2000009 /* file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = file.swift; sourceTree = "<group>"; };
+		A200000A /* finalBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalBillViewController.swift; sourceTree = "<group>"; };
+		A200000B /* FruitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsTableViewController.swift; sourceTree = "<group>"; };
+		A200000C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A200000D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A200000E /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		A200000F /* optionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionViewController.swift; sourceTree = "<group>"; };
+		A2000010 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		A2000011 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		A2000012 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A2000013 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A2000014 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		A2000015 /* UserDatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatabaseHandler.swift; sourceTree = "<group>"; };
+		A2000016 /* userDatabaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userDatabaseViewController.swift; sourceTree = "<group>"; };
+		A2000017 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		A2000018 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		A2000019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A200001A /* NSMutableArray+test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+test.h"; sourceTree = "<group>"; };
+		A200001B /* NSMutableArray+test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+test.m"; sourceTree = "<group>"; };
+		A200001C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A200001D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A200001E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A200001F /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
+		A2000020 /* foodie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foodie.jpg; sourceTree = "<group>"; };
+		A2000021 /* khanakhazanaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = khanakhazanaTests.swift; sourceTree = "<group>"; };
+		A2000025 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2000026 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2000027 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.text-based-dylib-definition; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A2000022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000023 /* khanakhazana.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = khanakhazana.entitlements; sourceTree = "<group>"; };
+		A2000024 /* KhanaKhazana-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KhanaKhazana-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000021 /* Foundation.framework in Frameworks */,
+				A1000022 /* UIKit.framework in Frameworks */,
+				A1000023 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5000001 = {
+			isa = PBXGroup;
+			children = (
+				A5000002 /* KhanaKhazana */,
+				A5000020 /* KhanaKhazanaTests */,
+				A5000021 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5000002 /* KhanaKhazana */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001 /* AppDelegate.swift */,
+				A5000003 /* ViewControllers */,
+				A5000004 /* Models */,
+				A5000005 /* Database */,
+				A5000006 /* Resources */,
+				A5000007 /* Supporting */,
+			);
+			path = .;
+			sourceTree = "<group>";
+		};
+		A5000003 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2000002 /* AboutUsViewController.swift */,
+				A2000003 /* AccountViewController.swift */,
+				A2000005 /* databaseViewController.swift */,
+				A2000007 /* DescriptionViewController.swift */,
+				A2000008 /* DetailViewController.swift */,
+				A200000A /* finalBillViewController.swift */,
+				A200000B /* FruitsTableViewController.swift */,
+				A200000C /* HomeViewController.swift */,
+				A200000D /* LoginViewController.swift */,
+				A200000F /* optionViewController.swift */,
+				A2000010 /* ScrollViewController.swift */,
+				A2000013 /* TableViewController.swift */,
+				A2000016 /* userDatabaseViewController.swift */,
+				A2000018 /* UserTableViewController.swift */,
+				A2000019 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A5000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2000009 /* file.swift */,
+				A2000014 /* user.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A5000005 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A2000006 /* DatabaseHandler.swift */,
+				A2000015 /* UserDatabaseHandler.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		A5000006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5000008 /* Base.lproj */,
+				A200001E /* Assets.xcassets */,
+				A2000022 /* Info.plist */,
+				A200001F /* database.sqlite */,
+				A2000020 /* foodie.jpg */,
+				A2000023 /* khanakhazana.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A5000007 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				A2000024 /* KhanaKhazana-Bridging-Header.h */,
+				A200001A /* NSMutableArray+test.h */,
+				A200001B /* NSMutableArray+test.m */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		A5000008 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A200001C /* Main.storyboard */,
+				A200001D /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		A5000020 /* KhanaKhazanaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000021 /* khanakhazanaTests.swift */,
+			);
+			path = .;
+			sourceTree = "<group>";
+		};
+		A5000021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3000001 /* KhanaKhazana.app */,
+				A3000002 /* KhanaKhazanaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6000001 /* KhanaKhazana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7000001 /* Build configuration list for PBXNativeTarget "KhanaKhazana" */;
+			buildPhases = (
+				A6000002 /* Sources */,
+				A4000001 /* Frameworks */,
+				A6000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KhanaKhazana;
+			productName = KhanaKhazana;
+			productReference = A3000001 /* KhanaKhazana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6000004 /* KhanaKhazanaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7000002 /* Build configuration list for PBXNativeTarget "KhanaKhazanaTests" */;
+			buildPhases = (
+				A6000005 /* Sources */,
+				A4000004 /* Frameworks */,
+				A6000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6000007 /* PBXTargetDependency */,
+			);
+			name = KhanaKhazanaTests;
+			productName = KhanaKhazanaTests;
+			productReference = A3000002 /* KhanaKhazanaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A6000001 = { CreatedOnToolsVersion = 15.0; };
+					A6000004 = { CreatedOnToolsVersion = 15.0; TestTargetID = A6000001; };
+				};
+			};
+			buildConfigurationList = A7000003 /* Build configuration list for PBXProject "KhanaKhazana" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5000001;
+			productRefGroup = A5000021 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100001B /* Main.storyboard in Resources */,
+				A100001C /* LaunchScreen.storyboard in Resources */,
+				A100001D /* Assets.xcassets in Resources */,
+				A100001E /* database.sqlite in Resources */,
+				A100001F /* foodie.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001 /* AppDelegate.swift in Sources */,
+				A1000002 /* AboutUsViewController.swift in Sources */,
+				A1000003 /* AccountViewController.swift in Sources */,
+				A1000004 /* CustomCollectionViewCell.swift in Sources */,
+				A1000005 /* databaseViewController.swift in Sources */,
+				A1000006 /* DatabaseHandler.swift in Sources */,
+				A1000007 /* DescriptionViewController.swift in Sources */,
+				A1000008 /* DetailViewController.swift in Sources */,
+				A1000009 /* file.swift in Sources */,
+				A100000A /* finalBillViewController.swift in Sources */,
+				A100000B /* FruitsTableViewController.swift in Sources */,
+				A100000C /* HomeViewController.swift in Sources */,
+				A100000D /* LoginViewController.swift in Sources */,
+				A100000E /* MyCollectionViewCell.swift in Sources */,
+				A100000F /* optionViewController.swift in Sources */,
+				A1000010 /* ScrollViewController.swift in Sources */,
+				A1000011 /* TableView.swift in Sources */,
+				A1000012 /* TableViewCell.swift in Sources */,
+				A1000013 /* TableViewController.swift in Sources */,
+				A1000014 /* user.swift in Sources */,
+				A1000015 /* UserDatabaseHandler.swift in Sources */,
+				A1000016 /* userDatabaseViewController.swift in Sources */,
+				A1000017 /* UserTableViewCell.swift in Sources */,
+				A1000018 /* UserTableViewController.swift in Sources */,
+				A1000019 /* ViewController.swift in Sources */,
+				A100001A /* NSMutableArray+test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000020 /* khanakhazanaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6000007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6000001 /* KhanaKhazana */;
+			targetProxy = A6000008 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		A6000008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6000001;
+			remoteInfo = KhanaKhazana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		A9000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A9000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = khanakhazana.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.khanakhazana.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_BRIDGING_HEADER = "KhanaKhazana-Bridging-Header.h";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = khanakhazana.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.khanakhazana.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_BRIDGING_HEADER = "KhanaKhazana-Bridging-Header.h";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.khanakhazana.KhanaKhazanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KhanaKhazana.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KhanaKhazana";
+			};
+			name = Debug;
+		};
+		A9000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.khanakhazana.KhanaKhazanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KhanaKhazana.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KhanaKhazana";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7000001 /* Build configuration list for PBXNativeTarget "KhanaKhazana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9000003 /* Debug */,
+				A9000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7000002 /* Build configuration list for PBXNativeTarget "KhanaKhazanaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9000005 /* Debug */,
+				A9000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7000003 /* Build configuration list for PBXProject "KhanaKhazana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9000001 /* Debug */,
+				A9000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8000001 /* Project object */;
+}
