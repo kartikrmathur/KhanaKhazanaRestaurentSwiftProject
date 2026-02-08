@@ -284,6 +284,10 @@
 			productRefGroup = A5000021 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			targets = (
+				A6000001 /* KhanaKhazana */,
+				A6000004 /* KhanaKhazanaTests */,
+			);
 		};
 /* End PBXProject section */
 
