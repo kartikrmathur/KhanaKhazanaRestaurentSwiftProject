@@ -75,7 +75,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let NSUserDomainMask = FileManager.SearchPathDomainMask.userDomainMask
         let paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true)
         cell.btnAddCart.tag = indexPath.row
-        cell.btnAddCart.addTarget(self, action: #selector(TableViewController.btnAddCart(sender:)), for: UIControlEvents.touchUpInside)
+        cell.btnAddCart.addTarget(self, action: #selector(TableViewController.btnAddCart(sender:)), for: UIControl.Event.touchUpInside)
         if let dirPath = paths.first
         {
             let imageURL = URL(fileURLWithPath: dirPath).appendingPathComponent(file.filename!)

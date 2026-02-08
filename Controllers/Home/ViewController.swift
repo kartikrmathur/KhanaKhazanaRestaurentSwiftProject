@@ -52,19 +52,19 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         self.performSegue(withIdentifier: "tableViewSegue", sender: self)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         imgView.contentMode = .scaleAspectFit
         imgView.image = chosenImage
         imagePicker.dismiss(animated: true, completion: nil)
-        imgView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        imgView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         //dismiss(animated:true, completion: nil)
     }
     
         func imagePicker(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-            let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
             imgView.contentMode = .scaleAspectFit
             imgView.image = chosenImage
-            imgView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+            imgView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
             dismiss(animated:true, completion: nil)
         }
     
@@ -79,7 +79,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
             print("Timestamp: \(Timestamp)")
             print(paths)
             
-            let imageData = UIImageJPEGRepresentation(imgView.image!, 0.5)
+            let imageData = imgView.image?.jpegData(compressionQuality: 0.5)
             fileManager.createFile(atPath: paths as String, contents: imageData, attributes: nil)
         }
         
