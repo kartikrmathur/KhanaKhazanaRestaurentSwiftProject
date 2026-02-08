@@ -4,6 +4,7 @@
 [![iOS 13.0+](https://img.shields.io/badge/iOS-13.0+-blue.svg)](https://developer.apple.com/ios/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Xcode 14+](https://img.shields.io/badge/Xcode-14%2B-147EFB.svg)](https://developer.apple.com/xcode/)
+[![Build](https://img.shields.io/badge/Build-passing-brightgreen.svg)](https://github.com/kartikrmathur/KhanaKhazanaRestaurentSwiftProject)
 
 A native **iOS restaurant ordering app** for Khana Khazana: browse the menu, add items to cart, and complete your order. Built with **Swift** and **UIKit** — no third‑party UI frameworks — and designed to showcase clean architecture and real-world iOS development.
 
@@ -14,6 +15,7 @@ A native **iOS restaurant ordering app** for Khana Khazana: browse the menu, add
 - [Overview](#-overview)
 - [Features](#-features)
 - [Screenshots](#-screenshots)
+- [Demo](#-demo)
 - [Tech Stack](#-tech-stack)
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
@@ -74,6 +76,17 @@ _Add your own screenshots to the `screenshots/` folder and they will appear here
 | ![Cart](screenshots/04-cart.png) | Cart |
 | ![Final Bill](screenshots/05-final-bill.png) | Final bill |
 | ![About Us](screenshots/06-about-us.png) | About Us |
+-->
+
+---
+
+## 🎬 Demo
+
+_A short demo video will appear here once you record and upload it. See [Demo Video Script](docs/DEMO_VIDEO_SCRIPT.md) for a shot-by-shot script and how to embed a YouTube link._
+
+<!-- When you have a video URL (e.g. https://www.youtube.com/watch?v=YOUR_VIDEO_ID), replace YOUR_VIDEO_ID below and uncomment:
+[![Khana Khazana Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+*Click the thumbnail to play on YouTube.*
 -->
 
 ---
@@ -182,6 +195,9 @@ For a detailed breakdown and architecture, see [docs/architecture.md](docs/archi
 - **[Screenshots guide](docs/SCREENSHOTS_GUIDE.md)** — How to capture and add screenshots to this README.
 - **[Repository rename](docs/REPOSITORY_RENAME.md)** — If you renamed the repo from `KhanaKhazanaRestaurentSwiftProject`, update your remote URL and clones.
 - **[Xcode update (Day 2)](docs/XCODE_UPDATE_GUIDE.md)** — After file reorganization: verify build and optional navigator groups.
+- **[Demo video script](docs/DEMO_VIDEO_SCRIPT.md)** — Shot-by-shot script, recording tools, YouTube upload, README embed.
+- **[Release guide](docs/RELEASE.md)** — Tag v1.0.0, release notes template, GitHub release steps.
+- **[Project board & issues](docs/PROJECT_BOARD.md)** — Labels, suggested issues, issue/PR templates.
 
 ---
 
