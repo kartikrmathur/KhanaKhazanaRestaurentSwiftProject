@@ -149,24 +149,29 @@ The app uses a bundled **database.sqlite** for menu data and can use **userdatab
 
 ```
 KhanaKhazanaRestaurantSwiftProject/
-├── KhanaKhazana.xcodeproj    # Xcode project
-├── AppDelegate.swift
-├── ViewController.swift      # Root / entry view logic
-├── HomeViewController.swift  # Home (Sign up / Login)
-├── LoginViewController.swift
-├── TableViewController.swift # Menu + cart
-├── FinalBillViewController.swift
-├── DatabaseHandler.swift     # SQLite menu access
-├── UserDatabaseHandler.swift
-├── Base.lproj/
-│   ├── Main.storyboard
-│   └── LaunchScreen.storyboard
+├── KhanaKhazana.xcodeproj
+├── App/
+│   └── AppDelegate.swift
+├── Controllers/
+│   ├── Home/       # Home, root / add-dish
+│   ├── Auth/       # Login
+│   ├── Account/    # Account, user table, user DB VC
+│   ├── Menu/       # Menu list, description, detail, options
+│   ├── Cart/       # Final bill
+│   ├── About/      # About Us
+│   └── Other/      # Scroll, Fruits table
+├── Views/          # Cells, custom TableView
+├── Models/         # Menu item (file), User
+├── Services/       # DatabaseHandler, UserDatabaseHandler
+├── Supporting/     # Bridging header, Obj-C helpers
+├── Tests/          # Unit tests
+├── Base.lproj/     # Main.storyboard, LaunchScreen
 ├── Assets.xcassets
 ├── README.md
-└── docs/                     # Additional documentation
+└── docs/           # Architecture, setup, screenshots, etc.
 ```
 
-For a detailed breakdown and architecture, see [docs/architecture.md](docs/architecture.md) (when added) and [docs/setup.md](docs/setup.md) (when added).
+For a detailed breakdown and architecture, see [docs/architecture.md](docs/architecture.md) (when added) and [docs/setup.md](docs/setup.md) (when added). After file reorganization, see [docs/XCODE_UPDATE_GUIDE.md](docs/XCODE_UPDATE_GUIDE.md).
 
 ---
 
@@ -176,6 +181,7 @@ For a detailed breakdown and architecture, see [docs/architecture.md](docs/archi
 - **[Architecture](docs/architecture.md)** — Structure, data flow, and main components.
 - **[Screenshots guide](docs/SCREENSHOTS_GUIDE.md)** — How to capture and add screenshots to this README.
 - **[Repository rename](docs/REPOSITORY_RENAME.md)** — If you renamed the repo from `KhanaKhazanaRestaurentSwiftProject`, update your remote URL and clones.
+- **[Xcode update (Day 2)](docs/XCODE_UPDATE_GUIDE.md)** — After file reorganization: verify build and optional navigator groups.
 
 ---
 
