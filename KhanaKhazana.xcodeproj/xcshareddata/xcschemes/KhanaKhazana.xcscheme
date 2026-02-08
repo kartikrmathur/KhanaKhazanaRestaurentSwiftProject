@@ -20,6 +20,20 @@
                ReferencedContainer = "container:KhanaKhazana.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A6000004"
+               BuildableName = "KhanaKhazanaTests.xctest"
+               BlueprintName = "KhanaKhazanaTests"
+               ReferencedContainer = "container:KhanaKhazana.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
