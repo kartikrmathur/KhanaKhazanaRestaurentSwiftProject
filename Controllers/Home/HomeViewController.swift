@@ -34,23 +34,23 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var btnSignupThroughgoogle: UIButton!
     
     @IBAction func btnSignupThroughGoogle(_ sender: Any) {
-            let alertController = UIAlertController(title: "Sign,Up",message: "Through,Google", preferredStyle: UIAlertControllerStyle.alert)
-            alertController.addAction(UIAlertAction(title:"Dismiss", style: UIAlertActionStyle.default,handler: nil))
+            let alertController = UIAlertController(title: "Sign,Up",message: "Through,Google", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title:"Dismiss", style: UIAlertAction.Style.default,handler: nil))
             self.present(alertController, animated: true,completion: nil)
     }
     
     @IBOutlet weak var btnSignUpThroughFacebook: UIButton!
     
     @IBAction func btnSignUpThroughFacebook(_ sender: Any) {
-        let alertController = UIAlertController(title: "SignUp", message: "Through FaceBook", preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+        let alertController = UIAlertController(title: "SignUp", message: "Through FaceBook", preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
         self.present(alertController,animated: true,completion: nil)
     }
     @IBOutlet weak var BtnsignupThroughinstagram: UIButton!
     
     @IBAction func btnSignUpThroughInstagram(_ sender: Any) {
-        let alertController = UIAlertController(title: "SignUp", message: "Through Instagram", preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+        let alertController = UIAlertController(title: "SignUp", message: "Through Instagram", preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
         self.present(alertController,animated: true,completion: nil)
     }
     

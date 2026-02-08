@@ -11,7 +11,7 @@ class ScrollViewController: UIViewController,UIScrollViewDelegate {
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.backgroundColor = UIColor.black
         scrollView.contentSize = imageView.bounds.size
-        scrollView.autoresizingMask = UIViewAutoresizing(rawValue: UIViewAutoresizing.RawValue(UInt8(UIViewAutoresizing.flexibleWidth.rawValue) | UInt8(UIViewAutoresizing.flexibleHeight.rawValue)))
+        scrollView.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         scrollView.addSubview(imageView)
         scrollView.contentOffset = CGPoint(x: 1000, y: 450)
         view.addSubview(scrollView)
