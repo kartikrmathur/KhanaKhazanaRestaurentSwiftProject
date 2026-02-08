@@ -1,0 +1,136 @@
+# =========================
+# Xcode
+# =========================
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode 8+ workspace
+*.xcworkspace
+!default.xcworkspace
+
+# Xcode patch
+*.xcodeproj/project.xcworkspace/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager build
+.build/
+
+# =========================
+# CocoaPods
+# =========================
+Pods/
+Podfile.lock
+*.xcworkspace
+!default.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# =========================
+# Swift Package Manager
+# =========================
+.build/
+.swiftpm/
+Package.resolved
+
+# =========================
+# Databases (SQLite)
+# =========================
+*.sqlite
+*.sqlite3
+*.db
+database.sqlite
+userdatabase.sqlite
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+
+# =========================
+# Sensitive / config
+# =========================
+*.xcconfig
+!default.xcconfig
+# Ignore only sensitive/secret config; keep Info.plist and .entitlements in repo
+# Secrets.plist
+# GoogleService-Info.plist
+# ApiKeys.swift
+# Config.plist
+
+# =========================
+# IDE / Editor
+# =========================
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# =========================
+# Temp / backup files
+# =========================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+file.temp_caseinsensitive_rename.swift
+
+# =========================
+# Archives / distribution
+# =========================
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# =========================
+# Logs & crash reports
+# =========================
+*.log
+*.crash
+*.ips
+
+# =========================
+# Fastlane (if used later)
+# =========================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# =========================
+# App packaging
+# =========================
+*.ipa
+*.dSYM.zip
