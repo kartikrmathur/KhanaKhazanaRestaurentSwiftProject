@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Xcode 14+](https://img.shields.io/badge/Xcode-14%2B-147EFB.svg)](https://developer.apple.com/xcode/)
 [![Build](https://img.shields.io/badge/Build-passing-brightgreen.svg)](https://github.com/kartikrmathur/KhanaKhazanaRestaurentSwiftProject)
+[![iOS CI](https://github.com/kartikrmathur/KhanaKhazanaRestaurentSwiftProject/actions/workflows/ios.yml/badge.svg)](https://github.com/kartikrmathur/KhanaKhazanaRestaurentSwiftProject/actions/workflows/ios.yml)
 
 A native **iOS restaurant ordering app** for Khana Khazana: browse the menu, add items to cart, and complete your order. Built with **Swift** and **UIKit** — no third‑party UI frameworks — and designed to showcase clean architecture and real-world iOS development.
 
@@ -198,6 +199,8 @@ For a detailed breakdown and architecture, see [docs/architecture.md](docs/archi
 - **[Demo video script](docs/DEMO_VIDEO_SCRIPT.md)** — Shot-by-shot script, recording tools, YouTube upload, README embed.
 - **[Release guide](docs/RELEASE.md)** — Tag v1.0.0, release notes template, GitHub release steps.
 - **[Project board & issues](docs/PROJECT_BOARD.md)** — Labels, suggested issues, issue/PR templates.
+- **[Tests](docs/TESTS.md)** — Unit tests (models, DatabaseHandler), how to run, CI.
+- **[Portfolio improvement summary](docs/PORTFOLIO_IMPROVEMENT_SUMMARY.md)** — What was done (Days 1–4 + Weekend) and what’s left for you.
 
 ---
 

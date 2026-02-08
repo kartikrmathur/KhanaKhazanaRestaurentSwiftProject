@@ -96,6 +96,11 @@ ehthumbs.db
 *.sublime-workspace
 *.sublime-project
 
+# Cursor / Cursor Agent (do not commit or push)
+.cursor/
+cursoragent
+Cursor Agent
+
 # =========================
 # Temp / backup files
 # =========================
